@@ -1,0 +1,74 @@
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.main__maquinas__card {
+  view-timeline-name: --machines-card;
+  view-timeline-axis: block;
+
+  animation-timeline: --machines-card;
+  animation-name: show;
+
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+.main__servicios__card {
+  view-timeline-name: --service-card;
+  view-timeline-axis: block;
+
+  animation-timeline: --service-card;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+
+.main__precios__card {
+  view-timeline-name: --prices-card;
+  view-timeline-axis: block;
+
+  animation-timeline: --prices-card;
+  animation-name: show;
+
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero__content_text {
+  animation: fadeInUp 1s forwards;
+}
+
+.hero__content__img {
+  animation: fadeInDown 1s forwards;    
+}

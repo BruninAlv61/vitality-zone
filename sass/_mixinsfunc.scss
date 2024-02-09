@@ -1,0 +1,11 @@
+@mixin crear-flexbox($justify, $flexdirection){
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+    flex-direction: $flexdirection;
+}
+
+@mixin crear-grid(){
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
